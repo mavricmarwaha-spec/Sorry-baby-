@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Himanshi ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0eb, #fff1e8, #ffd6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    padding: 25px;
+}
+
+/* Floating decorations */
+
+.decoration {
+    position: fixed;
+    bottom: -50px;
+    animation: floatUp linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Main card */
+
+.container {
+    width: 100%;
+    max-width: 440px;
+    background: rgba(255,255,255,0.88);
+    padding: 35px 25px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(200,80,120,0.2);
+    border: 2px solid white;
+    position: relative;
+    z-index: 2;
+    animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-decor {
+    font-size: 30px;
+    margin-bottom: 12px;
+    letter-spacing: 8px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #e75480;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #bd6684;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* Letter */
+
+.letter {
+    background: #fff4f7;
+    border-radius: 20px;
+    padding: 25px 18px;
+    border: 1px dashed #eea0ba;
+    line-height: 2;
+    color: #78485a;
+    font-size: 13px;
+}
+
+.letter p {
+    margin-bottom: 13px;
+}
+
+.highlight {
+    color: #e75480;
+    font-weight: 600;
+}
+
+/* Chocolate decoration */
+
+.chocolates {
+    font-size: 32px;
+    margin: 20px 0 10px;
+    letter-spacing: 8px;
+}
+
+/* Button */
+
+button {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #ff85a8, #ec5c8b);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(236,92,139,0.3);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+/* Surprise */
+
+#surprise {
+    display: none;
+    margin-top: 22px;
+    color: #e75480;
+    font-size: 15px;
+    line-height: 2;
+    animation: appear 0.8s ease;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #bd8298;
+}
+
+.bottom-flowers {
+    font-size: 27px;
+    margin-top: 18px;
+    letter-spacing: 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="top-decor">
+        🌷 🍫 🌸
+    </div>
+
+    <h1>I'm Sorry, Himanshi</h1>
+
+    <div class="subtitle">
+        A LITTLE LETTER FOR YOU ❤️
+    </div>
+
+    <div class="letter">
+
+        <p>Heyyyyy babyyyy ❤️</p>
+
+        <p>
+        Sorry Himanshi, I raised my voice at you.
+        Regardless of anything, I shouldn't do that.
+        </p>
+
+        <p>
+        I won't do it again.
+        </p>
+
+        <p class="highlight">
+        I'm genuinely sorry babyyyy :/
+        </p>
+
+        <p>
+        ❤️❤️❤️💕💕💕💕💕💕💕💕💕💕❤️🌸🌸
+        </p>
+
+        <p>
+        Mwahhhhh, lyyyyy!
+        </p>
+
+        <p>
+        Ab toh 6th month anniv aani waali hai,
+        be ready for thattttt 😭❤️
+        </p>
+
+        <p class="highlight">
+        MWAAHHHHH ❤️💕
+        </p>
+
+    </div>
+
+    <div class="chocolates">
+        🍫 🍓 🍫
+    </div>
+
+    <button onclick="showSurprise()">
+        One more thinggg 💌
+    </button>
+
+    <div id="surprise">
+
+        You're my favourite person, babyyy. ❤️
+
+        <br><br>
+
+        Here's to our 6th month together!
+
+        <br><br>
+
+        ILYYYYY ❤️
+
+        <br>
+
+        🍫🌹🍓🌸💕💗
+
+    </div>
+
+    <div class="bottom-flowers">
+        🌸 🌷 🌹 🌷 🌸
+    </div>
+
+    <div class="footer">
+        Made with lots of love, just for you ❤️
+    </div>
+
+</div>
+
+<script>
+
+const decorations = [
+    "🌸", "🌷", "🌹", "🍫",
+    "💕", "🍓", "💗", "🌺", "🍬"
+];
+
+function createDecoration() {
+
+    const item = document.createElement("div");
+
+    item.className = "decoration";
+
+    item.innerHTML =
+        decorations[Math.floor(Math.random() * decorations.length)];
+
+    item.style.left = Math.random() * 100 + "vw";
+
+    item.style.fontSize =
+        (18 + Math.random() * 20) + "px";
+
+    item.style.animationDuration =
+        (5 + Math.random() * 6) + "s";
+
+    document.body.appendChild(item);
+
+    setTimeout(() => {
+        item.remove();
+    }, 11000);
+
+}
+
+setInterval(createDecoration, 450);
+
+function showSurprise() {
+
+    document.getElementById("surprise").style.display = "block";
+
+    for(let i = 0; i < 35; i++) {
+
+        setTimeout(createDecoration, i * 80);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
