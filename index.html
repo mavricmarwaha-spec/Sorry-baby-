@@ -3,13 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>For Himanshi ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +16,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #ffe0eb, #fff1e8, #ffd6e5);
+    background: linear-gradient(135deg, #ffe1ec, #fff0f5, #ffd6e5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,44 +25,18 @@ body {
     padding: 25px;
 }
 
-/* Floating decorations */
-
-.decoration {
-    position: fixed;
-    bottom: -50px;
-    animation: floatUp linear infinite;
-    pointer-events: none;
-    z-index: 1;
-}
-
-@keyframes floatUp {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 0;
-    }
-    20% {
-        opacity: 0.9;
-    }
-    100% {
-        transform: translateY(-110vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* Main card */
-
 .container {
     width: 100%;
-    max-width: 440px;
-    background: rgba(255,255,255,0.88);
+    max-width: 430px;
+    background: rgba(255,255,255,0.8);
     padding: 35px 25px;
-    border-radius: 30px;
+    border-radius: 25px;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(200,80,120,0.2);
-    border: 2px solid white;
+    box-shadow: 0 10px 40px rgba(255,105,145,0.2);
+    border: 1px solid white;
+    animation: appear 1.2s ease;
     position: relative;
     z-index: 2;
-    animation: appear 1.2s ease;
 }
 
 @keyframes appear {
@@ -78,40 +50,37 @@ body {
     }
 }
 
-.top-decor {
-    font-size: 30px;
-    margin-bottom: 12px;
-    letter-spacing: 8px;
+.flower {
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 48px;
     color: #e75480;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .subtitle {
     color: #bd6684;
-    font-size: 11px;
-    letter-spacing: 3px;
+    font-size: 13px;
+    letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
-/* Letter */
-
 .letter {
-    background: #fff4f7;
-    border-radius: 20px;
-    padding: 25px 18px;
-    border: 1px dashed #eea0ba;
+    background: #fff5f8;
+    border-radius: 18px;
+    padding: 25px 20px;
+    border: 1px dashed #f3a4bd;
     line-height: 2;
     color: #78485a;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .letter p {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
 }
 
 .highlight {
@@ -119,22 +88,17 @@ h1 {
     font-weight: 600;
 }
 
-/* Chocolate decoration */
-
-.chocolates {
-    font-size: 32px;
+.love {
+    font-size: 25px;
     margin: 20px 0 10px;
-    letter-spacing: 8px;
 }
-
-/* Button */
 
 button {
     margin-top: 20px;
     background: linear-gradient(135deg, #ff85a8, #ec5c8b);
     color: white;
     border: none;
-    padding: 14px 30px;
+    padding: 13px 30px;
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -144,18 +108,34 @@ button {
 }
 
 button:hover {
-    transform: scale(1.07);
+    transform: scale(1.05);
 }
-
-/* Surprise */
 
 #surprise {
     display: none;
-    margin-top: 22px;
+    margin-top: 20px;
     color: #e75480;
-    font-size: 15px;
-    line-height: 2;
+    font-size: 16px;
+    line-height: 1.8;
     animation: appear 0.8s ease;
+}
+
+/* Photo inside the surprise */
+
+.surprise-photo {
+    width: 100%;
+    border-radius: 15px;
+    border: 4px solid white;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(255,105,145,0.2);
+}
+
+.surprise-quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    color: #e75480;
+    line-height: 1.5;
+    margin: 15px 0;
 }
 
 .footer {
@@ -164,10 +144,27 @@ button:hover {
     color: #bd8298;
 }
 
-.bottom-flowers {
-    font-size: 27px;
-    margin-top: 18px;
-    letter-spacing: 5px;
+.heart {
+    position: fixed;
+    bottom: -30px;
+    animation: float 7s linear infinite;
+    opacity: 0.7;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 </style>
@@ -177,9 +174,7 @@ button:hover {
 
 <div class="container">
 
-    <div class="top-decor">
-        🌷 🍫 🌸
-    </div>
+    <div class="flower">🌸</div>
 
     <h1>I'm Sorry, Himanshi</h1>
 
@@ -187,9 +182,13 @@ button:hover {
         A LITTLE LETTER FOR YOU ❤️
     </div>
 
+    <!-- THE ORIGINAL APOLOGY -->
+
     <div class="letter">
 
-        <p>Heyyyyy babyyyy ❤️</p>
+        <p>
+        Heyyyyy babyyyy ❤️
+        </p>
 
         <p>
         Sorry Himanshi, I raised my voice at you.
@@ -223,13 +222,13 @@ button:hover {
 
     </div>
 
-    <div class="chocolates">
-        🍫 🍓 🍫
-    </div>
+    <div class="love">💗 🌷 💗</div>
 
     <button onclick="showSurprise()">
         One more thinggg 💌
     </button>
+
+    <!-- SURPRISE REVEAL -->
 
     <div id="surprise">
 
@@ -237,20 +236,37 @@ button:hover {
 
         <br><br>
 
-        Here's to our 6th month together!
+        <img
+            src="us.jpg"
+            class="surprise-photo"
+            alt="A beautiful memory of us"
+        >
+
+        <div class="surprise-quote">
+
+            Aapke liye toh ghutna jhuka k bhi baith jaaye,
+            pamper toh bhot choti cheez hai. ❤️
+
+        </div>
+
+        🌹🌸🌷
 
         <br><br>
 
-        ILYYYYY ❤️
+        Our 6th month anniversary is almost hereee!
 
         <br>
 
-        🍫🌹🍓🌸💕💗
+        7th November, BABYYYY 😭💕
 
-    </div>
+        <br><br>
 
-    <div class="bottom-flowers">
-        🌸 🌷 🌹 🌷 🌸
+        I have something special planned for us.
+
+        <br><br>
+
+        ILYYYYY MWAAAHHH ❤️💕
+
     </div>
 
     <div class="footer">
@@ -261,49 +277,45 @@ button:hover {
 
 <script>
 
-const decorations = [
-    "🌸", "🌷", "🌹", "🍫",
-    "💕", "🍓", "💗", "🌺", "🍬"
-];
-
-function createDecoration() {
-
-    const item = document.createElement("div");
-
-    item.className = "decoration";
-
-    item.innerHTML =
-        decorations[Math.floor(Math.random() * decorations.length)];
-
-    item.style.left = Math.random() * 100 + "vw";
-
-    item.style.fontSize =
-        (18 + Math.random() * 20) + "px";
-
-    item.style.animationDuration =
-        (5 + Math.random() * 6) + "s";
-
-    document.body.appendChild(item);
-
-    setTimeout(() => {
-        item.remove();
-    }, 11000);
-
-}
-
-setInterval(createDecoration, 450);
-
 function showSurprise() {
 
     document.getElementById("surprise").style.display = "block";
 
-    for(let i = 0; i < 35; i++) {
-
-        setTimeout(createDecoration, i * 80);
-
+    for(let i = 0; i < 20; i++) {
+        createHeart();
     }
 
 }
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const emojis = ["❤️", "💕", "🌸", "💗", "✨"];
+
+    heart.innerHTML = emojis[
+        Math.floor(Math.random() * emojis.length)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+    heart.style.animationDuration =
+        (4 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 9000);
+
+}
+
+setInterval(createHeart, 600);
 
 </script>
 
